@@ -1,0 +1,21 @@
+{
+    "name": "NewAssembly",
+    "rootNamespace": "",
+    "references": [
+        "MaxSdk.Scripts",
+        "Wolffun.Ads",
+        "Wolffun.Log",
+        "UniTask"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [
+        "MAX_MEDIATION"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
