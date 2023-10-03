@@ -1,0 +1,29 @@
+{
+  "name": "com.wolffun.adbase",
+  "displayName": "Ad Base",
+  "description": "Ad Base",
+  "version": "1.0.12",
+  "unity": "2021.3",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WolffunGame/Ad-Base.git"
+  },
+  "author": {
+    "name": "WolffunGame",
+    "email": "thang@wolffungame.com",
+    "url": "https://github.com/WolffunGame"
+  },
+  "dependencies": {
+      "com.wolffun.singleton": "https://github.com/WolffunGame/Singleton.git#1.0.1",
+      "com.cysharp.unitask": "https://github.com/Cysharp/UniTask.git?path=src/UniTask/Assets/Plugins/UniTask",
+      "com.wolffun.log": "https://github.com/WolffunGame/Wolffun-Log.git#1.0.0"
+  },
+  "keywords": [
+    "restapi",
+    "dataloader"
+  ],
+  "release": {
+    "branches": ["main"]
+  }
+}
