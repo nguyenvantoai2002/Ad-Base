@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace Wolffun.Ads
+namespace Toga.Ads
 {
 
     public abstract class AdControllerBase : MonoBehaviour
