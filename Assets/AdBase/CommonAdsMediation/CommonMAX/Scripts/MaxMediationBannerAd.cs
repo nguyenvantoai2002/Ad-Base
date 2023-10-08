@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Wolffun.Ads.MaxMediation
+namespace Toga.Ads.MaxMediation
 {
     public class MaxMediationBannerAd : BannerAdModelBase
     {

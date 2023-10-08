@@ -1,6 +1,5 @@
-using Wolffun.Log;
 
-namespace Wolffun.Ads.MaxMediation
+namespace Toga.Ads.MaxMediation
 {
     public class MaxMediationRewardAd : RewardedAdModelBase
     {
@@ -63,9 +62,6 @@ namespace Wolffun.Ads.MaxMediation
             {
                 return;
             }
-
-            CommonLog.Log(AdLog.GetLogString("reward ad OnRewardedAdFailedToDisplayEvent"));
-
         }
 
         private void OnRewardedAdReceivedRewardEvent(string adUnitId, MaxSdk.Reward reward, MaxSdkBase.AdInfo adInfo)

@@ -2,7 +2,7 @@ using Cysharp.Threading.Tasks;
 using System;
 using UnityEngine;
 
-namespace Wolffun.Ads.MaxMediation
+namespace Toga.Ads.MaxMediation
 {
     [CreateAssetMenu(fileName = "CommonMaxMediationAdFactory", menuName = "ScriptableObjects/Ads/Factory/CommonMaxMediationAdFactory")]
     public class CommonMaxMediationAdFactory : AdFactoryBase

@@ -1,6 +1,5 @@
-using Wolffun.Log;
 
-namespace Wolffun.Ads.MaxMediation
+namespace Toga.Ads.MaxMediation
 {
     public class MaxMediationInterstitalAd : InterstitialModelBase
     {
@@ -53,8 +52,6 @@ namespace Wolffun.Ads.MaxMediation
                 return;
             }
 
-            CommonLog.Log(AdLog.GetLogString("interstitial ad OnInterstitialClickedEvent"));
-
         }
 
         private void OnInterstitialHiddenEvent(string adUnitId, MaxSdkBase.AdInfo adInfo)
@@ -73,9 +70,6 @@ namespace Wolffun.Ads.MaxMediation
             {
                 return;
             }
-
-            CommonLog.LogError(AdLog.GetLogString("interstitial ad OnInterstitialAdFailedToDisplayEvent"));
-
         }
 
         public override bool IsLoaded()

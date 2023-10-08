@@ -3,8 +3,8 @@
     "rootNamespace": "",
     "references": [
         "MaxSdk.Scripts",
-        "Wolffun.Ads",
-        "Wolffun.Log",
+        "Toga.Ads",
+        "Toga.Log",
         "UniTask"
     ],
     "includePlatforms": [],
