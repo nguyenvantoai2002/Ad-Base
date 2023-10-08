@@ -1,10 +1,10 @@
 {
-    "name": "Wolffun.Ads",
+    "name": "Toga.Ads",
     "rootNamespace": "",
     "references": [
-        "Wolffun.Singleton",
+        "Toga.Singleton",
         "UniTask",
-        "Wolffun.Log"
+        "Toga.Log"
     ],
     "includePlatforms": [],
     "excludePlatforms": [],

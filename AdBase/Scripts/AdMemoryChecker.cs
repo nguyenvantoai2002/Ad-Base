@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Wolffun.Ads
+namespace Toga.Ads
 {
     public static class AdMemoryChecker
     {

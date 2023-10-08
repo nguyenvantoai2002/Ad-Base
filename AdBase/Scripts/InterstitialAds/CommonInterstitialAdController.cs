@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Wolffun.Ads
+namespace Toga.Ads
 {
 
     public class CommonInterstitialAdController : CommonInterstitialAdController<AdFactoryBase, InterstitialModelBase>

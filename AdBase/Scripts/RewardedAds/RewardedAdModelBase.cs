@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Wolffun.Ads
+namespace Toga.Ads
 {
     public abstract class RewardedAdModelBase
     {

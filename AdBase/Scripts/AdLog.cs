@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using UnityEngine;
 
-namespace Wolffun.Ads
+namespace Toga.Ads
 {
     public static class AdLog
     {

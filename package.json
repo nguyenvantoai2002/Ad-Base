@@ -1,8 +1,8 @@
 {
-  "name": "com.t02game.adbase",
+  "name": "com.toga.adbase",
   "displayName": "Ad Base",
   "description": "Ad Base",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "unity": "2021.3",
   "license": "MIT",
   "repository": {
@@ -10,7 +10,7 @@
     "url": "git+https://github.com/tojidevgame/Ad-Base.git"
   },
   "author": {
-    "name": "T02Game",
+    "name": "Toji",
     "email": "toainguyenprogramminggame@gmail.com"
   },
   "dependencies": {
