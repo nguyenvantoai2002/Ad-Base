@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Wolffun.Log;
 
 namespace Wolffun.Ads
 {
@@ -31,10 +30,7 @@ namespace Wolffun.Ads
         public override bool IsLoadedAd()
         {
             bool isLoadedAd = _interstitialModel.IsLoaded();
-            CommonLog.Log(AdLog.GetLogString($"interstial ad loaded state: {isLoadedAd}"));
-
             return isLoadedAd;
-
         }
 
         protected override void ShowAd()

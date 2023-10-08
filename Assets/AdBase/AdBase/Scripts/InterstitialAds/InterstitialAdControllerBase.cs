@@ -3,8 +3,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Wolffun.Log;
-using Wolffun.Singleton;
 
 namespace Wolffun.Ads
 {
@@ -109,8 +107,6 @@ namespace Wolffun.Ads
         {
             _isOnClosedForcedInterestial = true;
             _onOpenInterstial = null;
-
-            AdminLog.LogError(AdLog.GetLogString("interstitial ad close"));
         }
 
         protected virtual void HandleLoadedFail(string error)
@@ -131,11 +127,8 @@ namespace Wolffun.Ads
 
         public virtual bool StartShowAd()
         {
-            AdminLog.LogError(AdLog.GetLogString("interstitial start show ad"));
-
             if (!IsLoadedAd())
             {
-                CommonLog.Log(AdLog.GetLogString("interstitial ad shown error"));
                 _onCloseForceInterstial = null;
                 _onFailToShowInterstial = null;
                 _onOpenInterstial = null;
@@ -152,7 +145,6 @@ namespace Wolffun.Ads
             await UniTask.Delay(timeInMs);
 
             RequestNewAd();
-
         }
 
     }
