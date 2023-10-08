@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Wolffun.Log;
 
 namespace Wolffun.Ads
 {
@@ -48,13 +47,8 @@ namespace Wolffun.Ads
             if (_apiInstance != null && _currentActivity != null)
             {
                 var remainMemory = _apiInstance.Call<int>("GetAndroidRemianMemory", _currentActivity);
-                CommonLog.Log(AdLog.GetLogString("remainMemory: " + remainMemory));
 
                 return (remainMemory) <= 250;
-            }
-            else
-            {
-                CommonLog.Log(AdLog.GetLogString("remainMemory nullllll"));
             }
 
             #endif

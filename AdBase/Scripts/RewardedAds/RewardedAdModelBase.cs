@@ -1,5 +1,4 @@
 ﻿using System;
-using Wolffun.Log;
 
 namespace Wolffun.Ads
 {
@@ -58,8 +57,6 @@ namespace Wolffun.Ads
 
         protected void HandleRewardBasedVideoFailedToLoad(string messageError)
         {
-            CommonLog.Log(AdLog.GetLogString(messageError));
-
             _isRewardedVideoLoaded = false;
             _isRequestingRewardedVideo = false;
             _isWaitingRequestVideo = true;

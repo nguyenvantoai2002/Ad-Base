@@ -3,8 +3,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Wolffun.Log;
-using Wolffun.Singleton;
 
 namespace Wolffun.Ads
 {
@@ -71,12 +69,10 @@ namespace Wolffun.Ads
 
         protected virtual void HandleAdLoadSuccess()
         {
-            AdminLog.LogError(AdLog.GetLogString("banner ad load success"));
         }
 
         protected virtual void HandleAdLoadFail(string error)
         {
-            AdminLog.LogError(AdLog.GetLogString("banner ad load failed"));
             _isFailedLoadBannerAd = true;
         }
 

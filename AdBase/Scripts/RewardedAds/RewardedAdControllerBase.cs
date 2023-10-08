@@ -3,8 +3,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Wolffun.Log;
-using Wolffun.Singleton;
 
 namespace Wolffun.Ads
 {
@@ -67,10 +65,8 @@ namespace Wolffun.Ads
 
         public virtual bool StartShowAd()
         {
-            AdminLog.LogError(AdLog.GetLogString("reward ad start show ad"));
             if (!IsLoadedAd())
             {
-                CommonLog.Log(AdLog.GetLogString("reward ad shown error"));
                 _onSuccessWatchVideo = null;
                 _onCloseRewardedVideo = null;
                 _onOpenRewardedVideo = null;
@@ -103,8 +99,6 @@ namespace Wolffun.Ads
                 _onCloseRewardedVideo?.Invoke();
                 _onCloseRewardedVideo = null;
                 _onOpenRewardedVideo = null;
-
-                AdminLog.LogError(AdLog.GetLogString("reward ad close"));
 
                 RequestNewAdAfterSeconds(INTERVAL_LOAD_NEXT_AD_AFTER_WATCH_IN_MS).Forget();
             }
